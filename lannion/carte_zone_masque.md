@@ -34,6 +34,8 @@ Quelques coquilles sur '`' (Forlac'h)
 
 => A vérifier avec la mairie et corriger ensuite sur OSM si besoin
 
+Le fichier utilisé est [ici](zones_masque_lannion.txt)
+
 ## Ajustements des rues par rapport aux numéros
 Utilisation de JOSM pour couper les rues par rapport aux numéros
 
@@ -54,6 +56,8 @@ Tentative de créer un polygone avec `cascade_union` et `convex_hull`, mais le p
 Conversion des différentes `LineString` en `Polygon' en utilisant la méthode `buffer`qui permet aussi
 de mieux visualiser la rue. Utilsation du coefficient 0.00005 
 `envelope = linestring.buffer(0.00005)`
+
+Le fichier obtenu est [ici](zones_masque_lannion.geojson)
 
 ## Publication sur umap
 Import du fichier geojson et parmétrisation de la couleur et ajout de quelques infos
