@@ -1,7 +1,7 @@
 # Exemples de données de Lannion-Trégor Commuanuté
 
-- Fichier geojosn des limites de LTC
-- Fichier zip avec limites au format shp
+- Fichier [GeoJSON](ltc.geojson) des limites de LTC
+- Fichier [ZIP](ltc.zip) des limites de LTC
 
 ## Obtenir les limites depuis OpenStreetMap
 
@@ -14,7 +14,7 @@ rel(area.zone)
 out;>;out skel;
 ```
 
-Conversion en shp avec `ogr2ogr`:
+Conversion au format SHP avec `ogr2ogr`
 
 ```bash
  ogr2ogr -nlt POLYGON -skipfailures ltc.shp ltc.geojson
